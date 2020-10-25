@@ -1,0 +1,47 @@
+BarWeb pour xoops 2
+-------------------
+
+Version 1.0
+
+Ce module permet simplement d’afficher des données issues du BarWeb dans un Iframe
+(Le barWeb c'est plus de 900 recettes de cocktails et presque autant en attente de saisie)
+Avec ce module vous pourrez avoir :
+- Une recherche de cocktail par famille
+- Une recherche de cocktails par nom
+- Une recherche de cocktail sur les ingrédients
+- Le hit parade des cocktails (D’après le nombre de consultation et d’après les notes données)
+- Obtenir une recette de cocktail au hasard
+
+Les autres fonctionnalités du BarWeb seront peut-être également intégré plus tard selon le temps dont je dispose.
+
+Les cocktails étant entièrement gérés sur le site BarWeb, les limitations sont les suivantes :
+- De Bloc
+- D’administration
+- Vous pouvez gérer les permissions d'accès qu'au niveau du module mais pas aux différentes pages qu'il peut afficher.
+- Pas de gestion des templates (Cf la partie sur le thème en fin de ce document)
+
+Seule le Français pourra être utiliser car le BarWeb n’est pas Multilingue.
+
+
+Installation:
+---------------
+- Copier le contenu du dossier barweb4xoops dans le répertoire modules
+- Activer le module barweb4xoops dans le menu d'administration
+
+Adaptation des données affichées à votre thème
+----------------------------------------------
+Dans le répertoire extras de l’archive, vous trouverez un fichier ‘STYLE.TXT’ documenté.
+Le contenu de ce fichier devra être ajouter aux fichiers Style.CSS, StyleNN.css, et StyleMac.css du thème que vous utiliser (Si votre site utilise plusieurs thème, il faudra répéter l’opération pour tous les thèmes autoriser).
+
+Ensuite, il vous faudra adapter les différents styles (bw_xxxx) afin de les faire coller aux mieux à votre thème.
+(Remarque : Le contenu du fichier STYLE.TXT est un exemple basé sur le thème x2t)
+
+Si la taille de l'Iframe était insuffisante, et que vous ne vouliez pas avoir l'ascenseur vertical, modifier le Tag Height de la balise IFrame contenu dans le fichier index.php
+
+A savoir également
+------------------
+Si vous voulez être tenu au courant des mises à jours du site (ajout de cocktails) afin de pouvoir informer vos membres, merci de vous inscrire à la liste de diffusion (Un formulaire est disponible sur le site)
+
+Actuellement, je me demande si je ne vais pas inclure sur ce site des bannières publicitaire (Pour financer l'acquisition d'un hébergement + domaine).
+Si tel est le cas, il se pourrait (mais ce n'est pas sûr du tout) que les pages affichant la liste des résultats d'une recherche de cocktails comportent un bandeau publicitaire vertical sur la droite.
+Enfin pour l'instant ce n'est pas d'actualité... 
